@@ -26,14 +26,14 @@ async function verifyEmail() {
     console.log('Type:', type);
     console.log('Email:', email);
     
-    if (!token || !email) {
-      showError('Token o email inválido en el enlace');
+    if (!token || !email || !type) {
+      showError('Token, email o tipo inválido en el enlace');
       return;
     }
     
     // Verify the email with Supabase
     const { data, error } = await supabase.auth.verifyOtp({
-      type: type || 'signup',
+      type: type,
       token: token,
       email: email
     });
