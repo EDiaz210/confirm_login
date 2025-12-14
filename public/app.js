@@ -18,7 +18,7 @@ async function initializeSupabase() {
 async function verifyEmail() {
   try {
     const url = new URL(window.location.href);
-    const token = url.searchParams.get('access_token');
+    const token = url.searchParams.get('token');
     const type = url.searchParams.get('type');
     const email = url.searchParams.get('email');
     
