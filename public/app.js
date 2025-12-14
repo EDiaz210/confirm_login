@@ -65,18 +65,10 @@ function showSuccess() {
   document.getElementById('loadingState').style.display = 'none';
   document.getElementById('successState').style.display = 'block';
   
-  let seconds = 5;
-  const countdownEl = document.getElementById('countdown');
-  const interval = setInterval(() => {
-    seconds--;
-    countdownEl.textContent = seconds;
-    
-    if (seconds <= 0) {
-      clearInterval(interval);
-      // Redirect to app
-      window.location.href = 'https://login-dart-ni6l-o270yeldj-lyxuzs-projects.vercel.app/';
-    }
-  }, 1000);
+  // Cerrar la pestaña después de 5 segundos
+  setTimeout(() => {
+    window.close();
+  }, 5000);
 }
 
 window.addEventListener('load', initializeSupabase);
