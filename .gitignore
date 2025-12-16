@@ -9,6 +9,8 @@
 # Office temporary files
 ~$*
 *.tmp
+*.docx
+*.doc
 .atom/
 .build/
 .buildlog/
