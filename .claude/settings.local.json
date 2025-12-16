@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /B:*)",
+      "Bash(ping:*)",
+      "Bash(npm cache clean:*)",
+      "Bash(set NODE_TLS_REJECT_UNAUTHORIZED=0)",
+      "Bash(vercel login:*)",
+      "Bash(npm install:*)",
+      "Bash(flutter pub:*)",
+      "Bash(flutter clean:*)",
+      "Bash(./gradlew clean:*)",
+      "Bash(flutter build:*)",
+      "Bash(.gradlew clean:*)",
+      "Bash(gradlew.bat:*)",
+      "Bash(vercel --version:*)",
+      "Bash(vercel:*)",
+      "Bash(ls:*)",
+      "Bash(del \"c:\\Users\\Juan Carlos\\Desktop\\Flutter\\login_pro\\vercel\\.env.example\")",
+      "Bash(pandoc:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
