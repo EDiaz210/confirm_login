@@ -1,0 +1,11 @@
+# Archivo .dockerignore para excluir archivos innecesarios
+
+.git
+.gitignore
+.vercel
+.next
+.env.local
+.env*.local
+node_modules
+npm-debug.log
+.DS_Store
